@@ -10,6 +10,6 @@ export function aqa(element) {
   element.dataset.count = (parseInt(element.dataset.count) + 1).toString()
 
   // 実行内容を更新
-  element.innerHTML = `aqa関数が${element.dataset.count}回実行されました\n`
+  element.innerHTML = `aqa関数が${element.dataset.count}回実行されました\n ランダムな数値: `
   element.innerHTML += Math.floor(Math.random() * 100 + 1)
 }
