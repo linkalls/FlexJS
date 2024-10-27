@@ -16,13 +16,12 @@ cdnから読み込んでください
 ### 確認メッセージ機能
 
 HTML 内で[`data-confirm`](index.html)属性を持つ要素を使用します。
+もちろん`button`タグだけじゃなくてaタグとかでもうまくいきます。
+triggerとしてはclickにしてます(今度変える機能を入れるかも)
 
 ```html
 <button data-confirm="メッセージ">buttonを押してね</button>
 ```
-
-
-
 
 
 ## ビルド
