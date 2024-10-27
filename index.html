@@ -14,7 +14,7 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
     <script>
-      hljs.initHighlightingOnLoad()
+      hljs.initHighlightingOnLoad();
     </script>
   </head>
   <body class="bg-gray-900 text-gray-200 font-sans leading-relaxed">
@@ -30,16 +30,16 @@
       <section class="mb-12">
         <h2 class="text-4xl font-semibold mb-6">インストール</h2>
         <p class="mb-4">CDNから読み込んでください:</p>
-        <pre
-          class="bg-gray-800 p-4 rounded-lg overflow-x-auto"
-        ><code class="html text-green-400">&lt;script src="https://cdn.jsdelivr.net/gh/linkalls/lightWeightJs/src/index.min.js"&gt;&lt;/script&gt;</code></pre>
+        <pre class="bg-gray-800 p-4 rounded-lg overflow-x-auto">
+          <code class="html text-green-400">
+            &lt;script src="https://cdn.jsdelivr.net/gh/linkalls/lightWeightJs/src/index.min.js"&gt;&lt;/script&gt;
+          </code>
+        </pre>
       </section>
       <section class="mb-12">
         <h2 class="text-4xl font-semibold mb-6">使い方</h2>
         <h3 class="text-3xl font-semibold mb-4">確認メッセージ機能</h3>
         <p class="mb-4">
-          HTML内で<code class="bg-gray-800 p-1 rounded">data-confirm</code
-          >属性を持つ要素を使用します。もちろん<code
             class="bg-gray-800 p-1 rounded"
             >button</code
           >タグだけでなく<code class="bg-gray-800 p-1 rounded">a</code
@@ -91,6 +91,8 @@
           <p data-confirm="pタグだよ？" class="bg-gray-800 p-2 rounded">
             pタグ
           </p>
+          <p class="aqa" data-controller="name#aqa" data-trigger="click">dfef</p>
+          <!-- <a href="https://x.com" data-trigger="hover" data-confirm="????">wfwf</a> -->
         </div>
       </section>
       <section class="mb-12">
@@ -116,7 +118,8 @@
       <div class="container mx-auto text-center">
         <p>&copy; 2024 lightWeightJs. All rights reserved.</p>
       </div>
+   
     </footer>
-    <script src="./dist/bundle.js"></script>
+    <script src="./src/index.js"></script>
   </body>
 </html>
