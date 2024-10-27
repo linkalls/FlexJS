@@ -21,17 +21,16 @@ HTML 内で[`data-confirm`](index.html)属性を持つ要素を使用します�
 <button data-confirm="メッセージ">buttonを押してね</button>
 ```
 
-JavaScript で[`src/index.js`](src/index.js)をインポートします。
 
-```javascript
-import "./src/index.js"
-```
+
+
 
 ## ビルド
 
 プロジェクトをビルドするには、以下のコマンドを実行します。
 
 ```bash
+npm i
 npm run build
 ```
 
