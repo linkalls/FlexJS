@@ -1,11 +1,18 @@
-const Confirm = document.querySelectorAll("[data-confirm]")
-Confirm.forEach((confirm) => {
-  confirm.addEventListener("click", (event) => {
-    const message = confirm.getAttribute("data-confirm")
+const Confirms = document.querySelectorAll("[data-confirm]")
+
+Confirms.forEach((confirm) => {
+  const message = confirm.getAttribute("data-confirm")
+  const trigger = confirm.dataset.trigger || "click"
+
+  const handleEvent = (event) => {
     if (!window.confirm(message)) {
-      //ユーザーがキャンセルを押したときにデフォルトの処理をキャンセルする
       event.preventDefault()
     }
-  })
-})
+  }
 
+  if (trigger === "hover") {
+    confirm.addEventListener("mouseover", handleEvent)
+  } else {
+    confirm.addEventListener(trigger, handleEvent)
+  }
+})
