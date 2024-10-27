@@ -1,14 +1,15 @@
 # lightWeightJs
 
 このライブラリは、簡単に使えて機能がすごく少ないことが最大のメリットです。以下に基本的な使用方法を示します。
-jsを書けない人向けです
-あと僕の勉強のためにdata-*属性を使ってます
+js を書けない人向けです
+あと僕の勉強のために data-\*属性を使ってます
 
 ## インストール
 
-cdnから読み込んでください
+cdn から読み込んでください
+
 ```html
-  <script src="https://cdn.jsdelivr.net/gh/linkalls/lightWeightJs/dist/bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/linkalls/lightWeightJs/dist/bundle.js"></script>
 ```
 
 ## 使い方
@@ -16,13 +17,19 @@ cdnから読み込んでください
 ### 確認メッセージ機能
 
 HTML 内で[`data-confirm`](index.html)属性を持つ要素を使用します。
-もちろん`button`タグだけじゃなくてaタグとかでもうまくいきます。
-triggerとしてはclickにしてます(今度変える機能を入れるかも)
+もちろん`button`タグだけじゃなくて a タグとかでもうまくいきます。
+trigger としてはデフォルトは click にしてます
+event として登録されてるものなら何でもいけます
 
 ```html
 <button data-confirm="メッセージ">buttonを押してね</button>
+<button data-confirm="2コメのボタン" data-trigger="mouseover">
+  mouseoverだよ
+</button>
+<button data-confirm="hoverって書いた時だよ" data-trigger="hover">
+  mouseoverだけhoverって書いても動くよ mouseoverってすぐ忘れちゃうんだよね
+</button>
 ```
-
 
 ## ビルド
 
