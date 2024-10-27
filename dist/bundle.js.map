@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.js"],
+  "sourcesContent": ["const Confirm = document.querySelectorAll(\"[data-confirm]\")\r\nConfirm.forEach((confirm) => {\r\n  confirm.addEventListener(\"click\", (event) => {\r\n    const message = confirm.getAttribute(\"data-confirm\")\r\n    if (!window.confirm(message)) {\r\n      //\u30E6\u30FC\u30B6\u30FC\u304C\u30AD\u30E3\u30F3\u30BB\u30EB\u3092\u62BC\u3057\u305F\u3068\u304D\u306B\u30C7\u30D5\u30A9\u30EB\u30C8\u306E\u51E6\u7406\u3092\u30AD\u30E3\u30F3\u30BB\u30EB\u3059\u308B\r\n      event.preventDefault()\r\n    }\r\n  })\r\n})\r\n\r\n"],
+  "mappings": "MAAA,IAAMA,EAAU,SAAS,iBAAiB,gBAAgB,EAC1DA,EAAQ,QAASC,GAAY,CAC3BA,EAAQ,iBAAiB,QAAUC,GAAU,CAC3C,IAAMC,EAAUF,EAAQ,aAAa,cAAc,EAC9C,OAAO,QAAQE,CAAO,GAEzBD,EAAM,eAAe,CAEzB,CAAC,CACH,CAAC",
+  "names": ["Confirm", "confirm", "event", "message"]
+}
