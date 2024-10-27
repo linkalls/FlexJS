@@ -9,7 +9,7 @@ js を書けない人向けです
 cdn から読み込んでください
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/linkalls/lightWeightJs/dist/bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/linkalls/lightWeightJs/src/index.min.js"></script>
 ```
 
 ## 使い方
