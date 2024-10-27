@@ -59,6 +59,41 @@
 &lt;p data-confirm="pタグだよ？"&gt;pタグ&lt;/p&gt;</code></pre>
       </section>
       <section class="mb-12">
+        <h2 class="text-4xl font-semibold mb-6">デモ</h2>
+        <div class="space-y-4">
+          <button
+            data-confirm="メッセージ"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            buttonを押してね
+          </button>
+          <button
+            data-confirm="2コメのボタン"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            data-trigger="mouseover"
+          >
+            mouseover eventです
+          </button>
+          <button
+            data-confirm="2コメのボタン"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            data-trigger="hover"
+          >
+            mouseoverだけはhoverって書いても動くよ
+          </button>
+
+          <a
+            href="https://linkall.uk"
+            data-confirm="aタグだよ"
+            class="text-blue-400 underline"
+            >aタグだよ</a
+          >
+          <p data-confirm="pタグだよ？" class="bg-gray-800 p-2 rounded">
+            pタグ
+          </p>
+        </div>
+      </section>
+      <section class="mb-12">
         <h2 class="text-4xl font-semibold mb-6">特徴</h2>
         <ul class="list-disc list-inside">
           <li class="mb-2">
@@ -82,6 +117,6 @@
         <p>&copy; 2024 lightWeightJs. All rights reserved.</p>
       </div>
     </footer>
-    <script src="src/index.js"></script>
+    <script src="./dist/bundle.js"></script>
   </body>
 </html>
