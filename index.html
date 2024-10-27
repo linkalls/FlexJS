@@ -3,17 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/linkalls/raku@beta-v0.01/raku.min.css">
+    <title>lightWeightJs</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad()
+    </script>
   </head>
-  <body>
-    <button data-confirm="メッセージ">buttonを押してね</button>
-    <button data-confirm="2コメのボタン" data-trigger="mouseover">mouseoverだよ</button>
-    <button data-confirm="hoverって書いた時だよ" data-trigger="hover">mouseoverだけhoverって書いても動くよ mouseoverってすぐ忘れちゃうんだよね</button>
-    <a href="https://linkall.uk" data-confirm="aタグだよ">aタグだよ</a>
-   <p data-confirm="pタグだよ？">pタグ</p>
+  <body class="bg-gray-900 text-gray-200 font-sans leading-relaxed">
+    <header class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center">
+        <h1 class="text-5xl font-bold">lightWeightJs</h1>
+        <p class="text-xl mt-2">
+          簡単に使えて機能が少ないことが最大のメリットです
+        </p>
+      </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+      <section class="mb-12">
+        <h2 class="text-4xl font-semibold mb-6">インストール</h2>
+        <p class="mb-4">CDNから読み込んでください:</p>
+        <pre
+          class="bg-gray-800 p-4 rounded-lg overflow-x-auto"
+        ><code class="html text-green-400">&lt;script src="https://cdn.jsdelivr.net/gh/linkalls/lightWeightJs/dist/bundle.js"&gt;&lt;/script&gt;</code></pre>
+      </section>
+      <section class="mb-12">
+        <h2 class="text-4xl font-semibold mb-6">使い方</h2>
+        <h3 class="text-3xl font-semibold mb-4">確認メッセージ機能</h3>
+        <p class="mb-4">
+          HTML内で<code class="bg-gray-800 p-1 rounded">data-confirm</code
+          >属性を持つ要素を使用します。もちろん<code
+            class="bg-gray-800 p-1 rounded"
+            >button</code
+          >タグだけでなく<code class="bg-gray-800 p-1 rounded">a</code
+          >タグなどでもうまくいきます。<code class="bg-gray-800 p-1 rounded"
+            >data-trigger</code
+          >属性を使用してイベントを指定できます。デフォルトは<code
+            class="bg-gray-800 p-1 rounded"
+            >click</code
+          >です。
+        </p>
+        <pre
+          class="bg-gray-800 p-4 rounded-lg overflow-x-auto"
+        ><code class="html text-green-400">&lt;button data-confirm="メッセージ"&gt;buttonを押してね&lt;/button&gt;
+&lt;button data-confirm="2コメのボタン" data-trigger="mouseover"&gt;mouseoverだよ&lt;/button&gt;
+&lt;button data-confirm="hoverって書いた時だよ" data-trigger="hover"&gt;mouseoverだけhoverって書いても動くよ mouseoverってすぐ忘れちゃうんだよね&lt;/button&gt;
+&lt;a href="https://linkall.uk" data-confirm="aタグだよ"&gt;aタグだよ&lt;/a&gt;
+&lt;p data-confirm="pタグだよ？"&gt;pタグ&lt;/p&gt;</code></pre>
+      </section>
+      <section class="mb-12">
+        <h2 class="text-4xl font-semibold mb-6">特徴</h2>
+        <ul class="list-disc list-inside">
+          <li class="mb-2">
+            <strong>簡単に使える</strong>: 初心者でもすぐに使い始められます。
+          </li>
+          <li class="mb-2">
+            <strong>軽量</strong>: パフォーマンスに優れています。
+          </li>
+          <li class="mb-2">
+            <strong>多機能</strong>: 様々なユースケースに対応しています。
+          </li>
+        </ul>
+      </section>
+      <section class="mb-12">
+        <h2 class="text-4xl font-semibold mb-6">ライセンス</h2>
+        <p>このプロジェクトはMITライセンスのもとで公開されています。</p>
+      </section>
+    </main>
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 lightWeightJs. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="src/index.js"></script>
   </body>
-  <script src="src/index.js"></script>
-
 </html>

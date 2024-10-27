@@ -31,16 +31,7 @@ event として登録されてるものなら何でもいけます
 </button>
 ```
 
-## ビルド
 
-プロジェクトをビルドするには、以下のコマンドを実行します。
-
-```bash
-npm i
-npm run build
-```
-
-このコマンドは、[`esbuild`](https://esbuild.github.io/)を使用して[`src/index.js`](src/index.js)をバンドルし、`dist/bundle.js`に出力します。
 
 ## 特徴
 
