@@ -1,10 +1,15 @@
 # lightWeightJs
 
 このライブラリは、簡単に使えて機能がすごく少ないことが最大のメリットです。以下に基本的な使用方法を示します。
+jsを書けない人向けです
+あと僕の勉強のためにdata-*属性を使ってます
 
 ## インストール
 
 cdnから読み込んでください
+```html
+  <script src="https://cdn.jsdelivr.net/gh/linkalls/lightWeightJs/dist/bundle.js"></script>
+```
 
 ## 使い方
 
