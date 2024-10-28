@@ -1,4 +1,4 @@
-# lightWeightJs
+# FlexJS
 
 このライブラリは、簡単に使えて機能がすごく少ないことが最大のメリットです。以下に基本的な使用方法を示します。
 js を書けない人向けです
@@ -9,7 +9,7 @@ js を書けない人向けです
 cdn から読み込んでください
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/linkalls/lightWeightJs/src/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/linkalls/FlexJS/src/index.min.js"></script>
 ```
 
 ## 使い方
