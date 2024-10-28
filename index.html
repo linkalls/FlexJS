@@ -14,9 +14,10 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
     <script>
-      hljs.initHighlightingOnLoad();
+      hljs.initHighlightingOnLoad()
     </script>
   </head>
+
   <body class="bg-gray-900 text-gray-200 font-sans leading-relaxed">
     <header class="bg-gray-800 text-white py-6">
       <div class="container mx-auto text-center">
@@ -40,12 +41,11 @@
         <h2 class="text-4xl font-semibold mb-6">使い方</h2>
         <h3 class="text-3xl font-semibold mb-4">確認メッセージ機能</h3>
         <p class="mb-4">
-            class="bg-gray-800 p-1 rounded"
-            >button</code
-          >タグだけでなく<code class="bg-gray-800 p-1 rounded">a</code
-          >タグなどでもうまくいきます。<code class="bg-gray-800 p-1 rounded"
-            >data-trigger</code
-          >属性を使用してイベントを指定できます。デフォルトは<code
+          <code class="bg-gray-800 p-1 rounded">button</code>タグだけでなく
+          <code class="bg-gray-800 p-1 rounded">a</code
+          >タグなどでもうまくいきます。
+          <code class="bg-gray-800 p-1 rounded">data-trigger</code
+          >属性を使用してイベントを指定できます。 デフォルトは<code
             class="bg-gray-800 p-1 rounded"
             >click</code
           >です。
@@ -91,7 +91,9 @@
           <p data-confirm="pタグだよ？" class="bg-gray-800 p-2 rounded">
             pタグ
           </p>
-          <p class="aqa" data-controller="name#aqa" data-trigger="click">data-controllerの例</p>
+          <p class="aqa" data-controller="name#aqa" data-trigger="click">
+            data-controllerの例
+          </p>
         </div>
       </section>
       <section class="mb-12">
@@ -117,8 +119,10 @@
       <div class="container mx-auto text-center">
         <p>&copy; 2024 lightWeightJs. All rights reserved.</p>
       </div>
-   
     </footer>
-    <script src="./src/index.js"></script>
+    <script>
+      window.jsDir = "./dist"
+    </script>
+    <script src="./dist/bundle.js"></script>
   </body>
 </html>

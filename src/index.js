@@ -30,16 +30,28 @@ dataControllers.forEach(async (controller) => {
 
   const handleEvent = async (event) => {
     try {
-      const module = await import(`./${controllerName}_controller.js`)
+      let module
+      if (window.jsDir) {
+        module = await import(
+          `${window.location.origin}/${window.jsDir}/${controllerName}_controller.js`
+        )
+      } else {
+        module = await import(
+          `${window.location.origin}/controllers/${controllerName}_controller.js`
+        )
+      }
       if (module[functionName]) {
-        module[functionName](controller)
+        module[functionName](controller) // controllerってのはelementで引数に渡してる
       } else {
         console.error(
           `関数名 ${functionName}は ${controllerName}_controller.jsで見つかりませんでした`
         )
       }
     } catch (error) {
-      console.error(`Failed to load controller ${controllerName}:`, error)
+      console.error(
+        `コントローラーが読み込めませんでした: ${controllerName}:`,
+        error
+      )
     }
   }
 
