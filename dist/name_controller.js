@@ -13,3 +13,8 @@ export function aqa(element) {
   element.innerHTML = `aqa関数が${element.dataset.count}回実行されました\n ランダムな数値: `
   element.innerHTML += Math.floor(Math.random() * 100 + 1)
 }
+
+export function noTrigger(element) {
+  console.log("noTrigger関数が実行されました")
+element.innerHTML = "noTrigger関数が実行されました"
+}
